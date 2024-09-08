@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>slide1</title>
+    <title>slide2</title>
+    <title>slide3</title>
+    <title>slide4</title>
+    <title>slide5</title>
+    <title>slide6</title>
+</head>
+
+<body>
+    <h1>Trang chủ</h1>
+    <button onclick="goToFirstPage()">Go to First Page</button>
+
+    <script>
+        function goToFirstPage() {
+            window.history.go(-window.history.length);
+        }
+    </script>
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <button onclick="goForward()">Go Forward</button>
+
+    <script>
+        function goForward() {
+            window.history.forward();
+        }
+    </script>
+
+    <a href="slide1.html">Slide 1</a>
+    <a href="slide2.html">Slide 2</a>
+    <a href="slide3.html">Slide 3</a>
+    <a href="slide4.html">Slide 4</a>
+    <a href="slide5.html">Slide 5</a>
+    <a href="slide6.html">Slide 6</a>
+    <tr>
+
+    </tr>
+
+
+</body>
+
+</html>

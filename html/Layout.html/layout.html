@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header' 'sidebar-1 content content content sidebar-2' 'footer footer footer footer footer';
+            text-align: center;
+        }
+        
+        .header {
+            padding: 5px;
+            grid-area: header;
+            width: 100%;
+            height: 70px;
+            background-color: yellow;
+            box-sizing: border-box;
+        }
+        
+        .sidebar-1 {
+            padding: 5px;
+            grid-area: sidebar-1;
+            background-color: pink;
+        }
+        
+        .sidebar-2 {
+            padding: 5px;
+            grid-area: sidebar-2;
+            background-color: lightgreen;
+        }
+        
+        .content {
+            padding: 5px;
+            grid-area: content;
+            background-color: #BB8FCE;
+        }
+        
+        .footer {
+            padding: 5px;
+            grid-area: footer;
+            border: 1px dashed #AAA;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">
+            <h3>Phần Header </h3>
+        </div>
+        <div class="grid-item sidebar-1">
+            Phần Sidebar 1 -<br /> Phần Sidebar 1 -<br /> Phần Sidebar 1 -<br /> Phần Sidebar 1 -<br />
+        </div>
+        <div class="grid-item content">
+            Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br /> Phần nội dung Web <br />
+        </div>
+        <div class="grid-item sidebar-2">Phần Siderbar 2</div>
+        <div class="grid-item footer">Phần Footer</div>
+    </div>
+
+</body>
+
+</html>

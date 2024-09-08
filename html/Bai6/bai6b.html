@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6b</title>
+    <style>
+        #box {
+            border: 1px solid blue;
+            max-width: fit-content;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="box">
+        <h2>Contact Us</h2>
+        <form>
+            <fieldset>
+                <legend>Your message</legend>
+                <table>
+                    <tr>
+                        <td>To</td>
+                        <td><input type="text" id="to"></td>
+                    </tr>
+                    <tr>
+                        <td>Your email</td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td><textarea id="mess" cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Attach File</td>
+                        <td><input type="file" id="files" name="files" multiple accept="image/*"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>How you found us:</legend>
+                <table>
+                    <tr>
+                        <td>How did you hear of us</td>
+                        <td><select>
+                                <optgroup>
+                                    <option value="google"> Google
+                                    <option value="facebook"> Facebook    
+                                    <option value="other"> Other 
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>News letter</td>
+                        <td><input type="checkbox" name="confirm" value="confirm"> Ensure this box is checked if you would like to receive email updates</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="button" name="sendbtn" value="Send message">
+    </div>
+</body>
+
+</html>

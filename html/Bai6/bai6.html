@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai6a</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        .title {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        #box {
+            width: 960px;
+            border: 1px solid rgb(231, 227, 227);
+            background-color: rgba(0, 94, 255, 0.688);
+            padding: 20px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 90%;
+        }
+        
+        hr {
+            color: gray;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .txt,
+        textarea {
+            margin-left: 100px;
+        }
+        
+        button {
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+        <table>
+
+            <tr>
+                <td colspan="3" class="title">
+                    <h2>Registrasion Form</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="title">
+                    <p>Register your Jackson Electronics product here</p>
+                </td>
+            </tr>
+            <tr>
+                <td>First Name:</td>
+                <td colspan="2"><input type="text" name="txtft" id="txtft" class="txt">Last name: <input type="text" name="txtft" id="txtft"></td>
+            </tr>
+            <tr>
+                <td>Address #1:</td>
+                <td colspan="2"><input type="text" name="txtadr1" id="txtadr1" class="txt" size="40px"></td>
+            </tr>
+            <tr>
+                <td>Address #2:</td>
+                <td colspan="2"><input type="text" name="txtadr2" id="txtadr2" class="txt" size="40px"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td colspan="2"><input type="text" name="txtct" id="txtct" class="txt" size="25px">State:<input type="text" name="txtst" id="txtst" size="2px">Zip:<input type="text" name="txtz" id="txtz" size="6px"></td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td colspan="2"><input type="text" name="txtcnt" id="txtcnt" class="txt" placeholder="United States"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>Product:</td>
+                <td colspan="2"><select name="slo" id="slo" class="txt">
+                    <option value="stuff1">Stuff1</option>
+                    <option value="stuff2">Stuff2</option>
+                    <option value="stuff3">Stuff3</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Used for:</td>
+                <td><input type="radio" name="rdc" id="rdc" class="txt">Home <br> <input type="radio" name=rdc id=rdc class="txt">Business</td>
+                <td><input type="radio" name="rdc" id="rdc">Educational Insititus<br> <input type="radio" name=rdc id=rdc>Other</td>
+            </tr>
+            <tr>
+                <td>System (check all apply):</td>
+                <td><input type="checkbox" name="cb1" id="cb1" class="txt">Window <br> <input type="checkbox" name="cb2" id="cb2" class="txt">Macintosh</td>
+                <td><input type="checkbox" name="cb3" id="cb3">UNIX<br> <input type="checkbox" name="cb4" id="cb4">Other</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="cb5" id="cb5" class="txt">Grovement</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments?:</td>
+                <td colspan="2">
+                    <textarea name="txarea" id="txarea" cols="50" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <button type="submit">Click to register</button>
+                    <button type="submit">Click to cancel</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
